@@ -1,0 +1,61 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-image: url("/front-end/images/lotr-background1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.quote {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.quote blockquote {
+  color: white;
+  font-family: "Dancing Script";
+  font-size: 3rem;
+  margin-top: -350px;
+}
+
+.search-bar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: -100px;
+  text-align: center;
+}
+
+#search-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
