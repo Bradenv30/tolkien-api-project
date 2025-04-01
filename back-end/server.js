@@ -16,32 +16,6 @@ const axiosInstance = axios.create({
   },
 });
 
-server.get("/book", (req, res) => {
-  axiosInstance
-    .get("/book")
-    .then((response) => {
-      console.log("Fetched:", response.data);
-      res.json(response.data);
-    })
-    .catch((error) => {
-      console.error("Error fetching:", error);
-      res.status(500).json({ error: "Failed to fetch data from API" });
-    });
-});
-
-server.get("/movie", (req, res) => {
-  axiosInstance
-    .get("/movie")
-    .then((response) => {
-      console.log("Fetched:", response.data);
-      res.json(response.data);
-    })
-    .catch((error) => {
-      console.error("Error fetching:", error);
-      res.status(500).json({ error: "Failed to fetch data from API" });
-    });
-});
-
 server.get("/character", (req, res) => {
   axiosInstance
     .get("/character")
@@ -58,19 +32,6 @@ server.get("/character", (req, res) => {
 server.get("/quote", (req, res) => {
   axiosInstance
     .get("/quote")
-    .then((response) => {
-      console.log("Fetched:", response.data);
-      res.json(response.data);
-    })
-    .catch((error) => {
-      console.error("Error fetching:", error);
-      res.status(500).json({ error: "Failed to fetch data from API" });
-    });
-});
-
-server.get("/chapter", (req, res) => {
-  axiosInstance
-    .get("/chapter")
     .then((response) => {
       console.log("Fetched:", response.data);
       res.json(response.data);

@@ -21,14 +21,6 @@ body {
   margin-top: -400px;
 }
 
-.search-bar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 75px;
-  text-align: center;
-}
-
 #search-input {
   width: 80%;
   padding: 10px;
@@ -59,4 +51,48 @@ nav ul li a {
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+.character-results {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive grid */
+  gap: 20px;
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.character-card {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.character-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.character-card p {
+  margin: 5px 0;
+}
+
+.character-card a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.character-card a:hover {
+  text-decoration: underline;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
 }
