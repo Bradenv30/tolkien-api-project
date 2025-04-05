@@ -136,4 +136,6 @@ function App() {
   );
 }
 
+//need to return something if no characters found
+
 export default App;
