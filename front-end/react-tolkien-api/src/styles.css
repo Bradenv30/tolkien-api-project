@@ -1,41 +1,41 @@
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
+  display: flex; /* flexbox to center content*/
+  justify-content: center; /* horizonatly center*/
+  flex-direction: column; /* stack elements vertically*/
+  align-items: center; /* vertically center*/
+  height: 100vh; /*Body takes up full viewport height */
   background-image: url("./images/lotr-background1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: cover; /* Background fills viewport*/
+  background-repeat: no-repeat; /* prevent background from repeating*/
 }
 
 .quote {
-  margin-top: 20px;
-  text-align: center;
+  margin-top: 20px; /* Add space above quote*/
+  text-align: center; /* Center*/
 }
 
 .quote blockquote {
   color: white;
   font-family: "Dancing Script";
   font-size: 3rem;
-  margin-top: -400px;
+  margin-top: -400px; /*Move quote up */
 }
 
 #search-input {
-  width: 80%;
+  width: 80%; /* Inout takes up 80% of container eidth*/
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px; /* Rounds corners*/
   border: none;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Includes padding and border in width/height*/
   text-align: center;
-  border-radius: 20px;
+  border-radius: 20px; /* Round corners*/
 }
 
 nav ul {
-  list-style-type: none;
+  list-style-type: none; /* Remove bullets*/
   padding: 0;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 30px; /* Add space above*/
 }
 
 nav ul li {
@@ -53,22 +53,22 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 .character-results {
-  display: grid;
+  display: grid; /* display results in grid*/
   grid-template-columns: repeat(
     auto-fill,
     minmax(250px, 1fr)
-  ); /* Responsive grid */
-  gap: 20px;
+  ); /* Responsive grid with min width of 250px*/
+  gap: 20px; /* Space between grid items*/
   padding: 20px;
-  max-height: 70vh;
-  overflow-y: auto;
+  max-height: 70vh; /* Limit height of results container*/
+  overflow-y: auto; /* Add verticle scrolling if content is large enough*/
 }
 
 .character-card {
   background: #f4f4f4;
-  border-radius: 8px;
+  border-radius: 8px; /*Round corners */
   padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow*/
   text-align: center;
 }
 
@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 .character-card a {
-  text-decoration: none;
+  text-decoration: none; /*Remove underlines */
   color: #007bff;
   font-weight: bold;
 }
@@ -95,4 +95,22 @@ nav ul li a:hover {
   text-align: center;
   font-size: 1.5rem;
   color: white;
+}
+
+.no-results {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  margin-top: 2rem;
+  font-size: 1.2rem;
+}
+
+.quote-generator {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.quote-generator blockquote {
+  font-style: italic;
+  margin-top: 1rem;
 }
